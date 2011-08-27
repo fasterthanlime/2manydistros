@@ -2,10 +2,10 @@
 
 set -e -u
 
-name=archlinux
-iso_label="ARCH_$(date +%Y%m)"
+name=2manydistros
+iso_label="2md_$(date +%Y%m)"
 version=$(date +%Y.%m.%d)
-install_dir=arch
+install_dir=2md
 arch=$(uname -m)
 work_dir=work
 verbose="y"
@@ -15,6 +15,12 @@ script_path=$(readlink -f ${0%/*})
 # Base installation (root-image)
 make_basefs() {
     mkarchiso ${verbose} -D "${install_dir}" -p "$(cat packages.d/*.list)" create "${work_dir}"
+}
+
+# Copy custom configuration
+make_config() {
+    # TODO: repackage packages with our custom config instead of overwriting
+    cp -r config.d/* ${work_dir}/root-image
 }
 
 # Copy mkinitcpio archiso hooks (root-image)
@@ -88,6 +94,7 @@ else
 fi
 
 make_basefs
+make_config
 make_setup_mkinitcpio
 make_boot
 make_syslinux
