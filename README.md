@@ -1,3 +1,3 @@
-http://xkcd.com/927
+http://xkcd.com/927 applied to Linux distributions for web devs. Enough said.
 
-(Note to @programble: Yes, no repo description for you yet. Still vaporware)
+(For a list of planned features, see ideas.md)
