@@ -3,6 +3,7 @@ syslinux
 filesystem
 sysvinit
 initscripts
+device-mapper
 udev
 linux
 
