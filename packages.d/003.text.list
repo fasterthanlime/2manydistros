@@ -1,0 +1,10 @@
+gawk
+grep
+less
+sed
+
+vi
+vim
+
+diffutils
+findutils

@@ -1,0 +1,9 @@
+dhcpcd
+net-tools
+wireless-tools
+wpa_supplicant
+iputils
+gnu-netcat
+ngrep
+curl
+wget
