@@ -8,21 +8,20 @@ version=$(date +%Y.%m.%d)
 install_dir=arch
 arch=$(uname -m)
 work_dir=work
-verbose="n"
+verbose="y"
 
 script_path=$(readlink -f ${0%/*})
 
 # Base installation (root-image)
 make_basefs() {
-    mkarchiso ${verbose} -D "${install_dir}" -p "base" create "${work_dir}"
-    mkarchiso ${verbose} -D "${install_dir}" -p "syslinux" create "${work_dir}"
+    mkarchiso ${verbose} -D "${install_dir}" -p "$(cat packages.d/*.list)" create "${work_dir}"
 }
 
 # Copy mkinitcpio archiso hooks (root-image)
 make_setup_mkinitcpio() {
    if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
-        cp /lib/initcpio/hooks/archiso ${work_dir}/root-image/lib/initcpio/hooks
-        cp /lib/initcpio/install/archiso ${work_dir}/root-image/lib/initcpio/install
+        cp initcpio/hooks/archiso ${work_dir}/root-image/lib/initcpio/hooks
+        cp initcpio/install/archiso ${work_dir}/root-image/lib/initcpio/install
         : > ${work_dir}/build.${FUNCNAME}
    fi
 }
