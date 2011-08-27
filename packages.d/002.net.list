@@ -1,6 +1,6 @@
 dhcpcd
 net-tools
-wireless-tools
+wireless_tools
 wpa_supplicant
 iputils
 gnu-netcat

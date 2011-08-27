@@ -1,4 +1,4 @@
-grub
+syslinux
 
 filesystem
 sysvinit
