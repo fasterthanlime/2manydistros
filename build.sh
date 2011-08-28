@@ -14,7 +14,7 @@ script_path=$(readlink -f ${0%/*})
 
 # Base installation (root-image)
 make_basefs() {
-    mkarchiso ${verbose} -D "${install_dir}" -p "$(cat packages.d/*.list | sed 's/#.*$/g' | sort -n)" create "${work_dir}"
+    mkarchiso ${verbose} -D "${install_dir}" -p "$(cat packages.d/*.list | sed 's/#.*$//g' | sort -n)" create "${work_dir}"
 }
 
 # Copy custom configuration
@@ -94,6 +94,9 @@ else
 fi
 
 make_basefs
+. fakepkgs.sh
+install_all_packages
+
 make_config
 make_setup_mkinitcpio
 make_boot

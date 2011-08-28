@@ -11,4 +11,5 @@ xorg-xset
 xorg-xsetroot
 xorg-xinput
 
-awesome
+# awesome # Sadly only in AUR :(
+openbox
