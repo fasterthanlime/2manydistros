@@ -15,6 +15,7 @@ cronie
 logrotate
 syslog-ng
 shadow
+sudo
 
 binutils
 coreutils
