@@ -1,7 +1,5 @@
 xorg-server
 xorg-xinit
-xorg-twm
-xorg-xclock
 slim
 xorg-xdpyinfo
 xorg-xdriinfo
@@ -12,3 +10,5 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xinput
+
+awesome
