@@ -1,7 +1,10 @@
 dhcpcd
 net-tools
+
 wireless_tools
 wpa_supplicant
+aircrack-ng
+
 iputils
 gnu-netcat
 ngrep
