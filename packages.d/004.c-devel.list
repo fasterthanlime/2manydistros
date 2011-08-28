@@ -1,0 +1,10 @@
+gcc
+colorgcc
+clang
+llvm
+make
+automake
+autoconf
+gdb
+valgrind
+yasm
