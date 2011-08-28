@@ -2,7 +2,6 @@ xorg-server
 xorg-xinit
 xorg-twm
 xorg-xclock
-xterm
 slim
 xorg-xdpyinfo
 xorg-xdriinfo
