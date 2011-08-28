@@ -5,6 +5,14 @@ llvm
 make
 automake
 autoconf
+libtool
+bison
+yacc
+fakeroot
+flex
+m4
+patch
+pkg-config
 gdb
 valgrind
 yasm
