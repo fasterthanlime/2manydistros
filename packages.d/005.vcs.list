@@ -1,2 +1,5 @@
 git
-cvs
+cvs # Some stuff still relies on it...
+
+# bzr, mercurial, darcs & friends not included for size here,
+# let's wait until people complain
