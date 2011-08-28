@@ -7,7 +7,6 @@ automake
 autoconf
 libtool
 bison
-yacc
 fakeroot
 flex
 m4
