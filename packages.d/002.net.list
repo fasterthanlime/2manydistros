@@ -11,5 +11,8 @@ ngrep
 curl
 wget
 
-wpa_supplicant_gui
+netcfg
 ifplugd
+wpa_actiond
+wpa_supplicant_gui
+
